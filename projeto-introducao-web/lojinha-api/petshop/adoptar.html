@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+<!-- font para tablas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--FONT AWESOME - LIBRERIA ANIMACIONES Y CSS STYLES-->
+  
+  <link rel="stylesheet" href="css/animista.css">
+  <link rel="stylesheet" href="css/model01.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Adoptar</title>
+
+</head>
+<body>
+ 
+
+
+    <nav class="menu">
+      <label><img src="img/logo/logo02.svg" alt="logo libretaPET" class="logoBrand"/></label>
+      <ul class="menu__item ">
+        <li class="item"><a href="home.html" class="link-item">Home</a></li>
+        <li class="item"><a href="info.html" class="link-item">Info</a></li>
+        <li class="item"><a href="salud.html" class="link-item">salud</a></li>
+        <li class="item"><a href="#" class="link-item">Adoptar</a></li>
+        <li class="item"><a href="proyecto.html" class="link-item">Proyecto</a></li>
+        <li class="item"><a href="conntacto.html" class="link-item">Contacto</a></li>
+
+        <li class="item"><a href="snakeGame.html" class="link-item">snakeGame</a></li>
+     
+      </ul>
+  
+      <span class="btn__menu" id="buttonMenu">
+        <i class="fa fa-bars" ></i>
+      </span>
+    </nav>
+
+  <header>
+    
+    <img src="img/pets/dog1.jpg" alt="" class="hero50" />
+    
+    <div class="hero50 heroBG slide-in-blurred-top">
+      <h1>Simulador Adoptar</h1>
+    </div>
+    
+</header>
+
+ 
+
+
+
+
+    <style>
+      /* NORMALIZE BROWSERS */
+      .div__container-x100vh{
+        min-height: 100vh;
+        display: flex;
+      }
+      
+      /* ESTILOS GENERALES */
+      
+      .nav-icon {
+        width: 75px;
+        height: 40px;
+        display: inline;
+      }
+      
+      
+      /* Container */
+      
+      
+
+      
+      /*ARTICLE{*/
+      
+      
+      /*    WIDTH: 100PX;*/
+      
+      
+      /*    HEIGHT: 100PX;*/
+      
+      
+      /*    BACKGROUND: DARKCYAN;*/
+      
+      
+      /*    COLOR: #FFF;*/
+      
+      
+      /*    TEXT-ALIGN: CENTER;*/
+      
+      
+      /*    FONT-FAMILY: SANS-SERIF;*/
+      
+      
+      /*    LINE-HEIGHT: 80PX;*/
+      
+      
+      /*}*/
+      
+      a {
+        color: rgb(255, 0, 170);
+        height: 2.3rem;
+        padding: 0rem;
+        margin: .4rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-family: "Helvetica";
+      }
+      
+      main {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        flex-wrap: wrap;
+      
+      
+      }
+      
+      aside {
+        background-color: #f5b07c;
+        width: 12.5%;
+      }
+      
+      footer {
+        width: 100%;
+        min-height: 10vh;
+      }
+      
+      
+      
+      
+      
+      section {
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+        align-self: center;
+        margin-left: 2rem;
+      }
+      
+      .article {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 80%;
+        height: 80%;
+      }
+      
+      .article-lg {
+        width: 75%;
+      }
+      
+      
+      /*
+      propiedades PADRE
+      
+      propiedades HIJO
+      flex-grow
+      grows  disponible / grow items
+      grows disponible - tamano contenedor - tamano items
+      ejemplo div 1200px con 3 hijos de 200 px
+      grow-disponible = 1200 - 3*200 = 600
+      defino una cantidad de grows para cada item
+      
+      item 1: 1 * 50 -> 50
+      item 2 : 2 * 50 -> 100
+      item 3 : 1 * 50 -> 50
+      
+      total 4 flex grow con ocupacion
+      
+      disponible = spaceContenedor - spaceItems
+      grow = disponible /numGrows * spaceContenedor
+      grow = disponible / flexGrows
+      
+      
+      
+      */
+      
+      
+      /* HOME REMAKE STYLES */
+      
+      .brand-div {
+        background-color: rgb(6, 43, 0);
+        width: 175px;
+        display: flex;
+        color: white;
+        padding-top: 3rem;
+      }
+      
+      .brand-logo {
+        width: 140px;
+        opacity: 0.5;
+        justify-content: start;
+        transform: translateX(-34%);
+        -webkit-transform: translateX(-39%);
+        -moz-transform: translateX(-39%);
+        -ms-transform: translateX(-39%);
+        -o-transform: translateX(-39%);
+        z-index: 0;
+      }
+      
+      .header-title {
+        height: 100%;
+        color: white;
+        opacity: 2;
+        align-self: flex-end;
+      }
+      
+      h1 {
+        color: rgb(255, 0, 119);
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        padding-bottom: 5rem;
+      }
+      
+      title-section {
+        margin-top: 5rem;
+      }
+      
+      
+      /* SCHEDULE STYLES */
+      
+      .search-schedule {
+        width: 100%;
+        background-color: rgb(217, 255, 3);
+        display: inline-flex;
+        flex-direction: col;
+      }
+      
+      main 
+      {display: flex;
+        width: 100%;
+      height: 100%;
+        color: black;
+
+        background-color: white;
+        justify-content: space-between;
+
+
+      }
+      
+      aside{
+        display: flex;
+        width: 15%;
+        flex-flow: column wrap;
+        align-self: space-around;
+        justify-content: center;
+        align-items: space-around;
+      }
+
+      .plus a{
+        color: black;
+        font-weight: 900;
+        font-size: 0.6rem;
+        align-content: space-around;
+        background-color: aquamarine;
+        
+      }
+     .plus-img{
+     
+        max-width: 40%;
+      }
+      </style>
+      
+    
+      <div class="div__container-x100vh">
+    <!-- ---UL y OL SOLO TIENEN HIJOS LI ADENTRO PUEDE HABER OTRAS ETIQUETAS!!!!!!---------- -->
+      <aside>
+          <div class="plus">
+              <a href="detalles/#adopcion">
+                  <img class="plus-img" src="img/icons/icon01-plus1.png" alt="imagen camisa">
+                  <div class="plus-div">
+                      <p class="plus-name">INFO</p>
+                      <p class="plus-slogan">ADOPCION</p>
+                  </div>
+              </a>
+          </div>
+          <div class="plus">
+              <a href="detalles/#vacunas">
+                  <img class="plus-img" src="img/icons/icon01-plus1.png" alt="imagen camisa">
+                  <div class="plus-div">
+                      <p class="plus-name">INFO</p>
+                      <p class="plus-slogan">VACUNAS</p>
+                  </div>
+              </a>
+          </div>
+          <div class="plus">
+              <a href="detalles/#antiparasitario">
+                  <img class="plus-img" src="img/icons/icon01-plus1.png" alt="imagen camisa">
+                  <div class="plus-div">
+                      <p class="plus-name">MASCOTA</p>
+                      <p class="plus-slogan">BANNER</p>
+                  </div>
+              </a>
+              <div class="plus">
+                  <a href="plus01.html">
+                      <img class="plus-img" src="img/icons/icon01-plus1.png" alt="imagen camisa">
+                      <div class="plus-div">
+                          <p class="plus-name">MASCOTA</p>
+                          <p class="plus-slogan">BANNER</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </aside>
+  
+      <section>
+        <div class="container">
+      <h1>SIMULADOR DE  ADOPCION</h1>
+    
+     
+</div>
+
+     
+ 
+      <div class="container">
+      <label for="select-breed">RAZA PROCURADA? </label>
+      <select id="breed-dropdown" name="select-breed" >          
+        <option></option>
+        <option value="a"> a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        
+      </select>
+      </div>
+     
+
+  <div class="article-anti" id="dog-image-container">
+
+  </div>
+  <div class="article-anti dog-image-container">
+    <button class="button-29" role="button">Button 29</button>
+
+  </div>
+  <ul id="dog-breads">
+</ul>
+<div class="article-anti dog-image-container">
+ 	 <img id="imagenMostrar"> </img>
+  <button class="button-33" role="button" id="bbusqueda"> Buscar gif </button>
+
+ 
+
+</div>
+
+
+<ul id="dog-breads">
+</ul>
+         </section>
+
+<!--div class="article-text">
+
+
+            <h2>Nombre del PET</h2>
+  
+            <ul>
+                <li>
+                    <div class="details">
+                        <h3>Raza</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </li>
+                <li id="dog-breeds">
+
+                </li>
+              </ul>
+          </div>
+          
+<article class="article-anti">
+          </figure>
+        </article>
+<article class="article-anti">
+          <div class="article-text">
+
+
+            <h2>Nombre del PET</h2>
+  
+            <ul>
+                <li>
+                    <div class="details">
+                        <h3>Raza</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </li>
+              </ul>
+          </div>
+          <figure>
+            <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+          </figure>
+        </article>
+        <article class="article-anti">
+          <div class="article-text">
+
+
+            <h2>Nombre del PET</h2>
+  
+            <ul>
+                <li>
+                    <div class="details">
+                        <h3>Raza</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </li>
+              </ul>
+          </div>
+          <figure>
+            <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+          </figure>
+        </article>
+        <article class="article-anti">
+          <div class="article-text">
+
+
+            <h2>Nombre del PET</h2>
+  
+            <ul>
+                <li>
+                    <div class="details">
+                        <h3>Raza</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </li>
+              </ul>
+          </div>
+          <figure>
+            <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+          </figure>
+        </article>
+
+      
+          <article class="article-anti">
+            <div class="article-text">
+  
+  
+              <h2>Nombre del PET</h2>
+    
+              <ul>
+                  <li>
+                      <div class="details">
+                          <h3>Raza</h3>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <figure>
+              <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+            </figure>
+          </article>
+          <article class="article-anti">
+            <div class="article-text">
+  
+  
+              <h2>Nombre del PET</h2>
+    
+              <ul>
+                  <li>
+                      <div class="details">
+                          <h3>Raza</h3>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <figure>
+              <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+            </figure>
+          </article>
+          <article class="article-anti">
+            <div class="article-text">
+  
+  
+              <h2>Nombre del PET</h2>
+    
+              <ul>
+                  <li>
+                      <div class="details">
+                          <h3>Raza</h3>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <figure>
+              <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+            </figure>
+          </article>
+          <article class="article-anti">
+            <div class="article-text">
+  
+  
+              <h2>Nombre del PET</h2>
+    
+              <ul>
+                  <li>
+                      <div class="details">
+                          <h3>Raza</h3>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <figure>
+              <img class="img-article" src="img/pets/dog2.png" alt="sonic videojuego">
+            </figure>
+          </article>-->
+          
+
+
+
+          <!-- ----LISTA DESCRIPTIVA CREA SUBCATECORIAS TAGS DL , DT-------------- -->
+          <!-- -------DESCRIPTION LIST - DL------------------------- -->
+          <!-- -------DESCRIPTION TITLE - DT------------------------- -->
+          <!-- -------DESCRIPTION DESCRIPTION (DESCRIPTION PER SE) - DD--- -->
+          <!-- -------HIJOS DIRECTOS  DD PADRE>DL>DT--- -->
+          <!-- -------TITULO DE LISTA  HAY QUE PONER POR AFUERA!!!!!!!!! --- -->
+
+</section>
+</div>
+
+  </main>
+
+
+  <footer>
+    <ul class="social-icons-list">
+      <li>
+        <a href="#" class="social-link"><i class="fa-solid fa-arrow-up"></i>TOPO</a>
+      </li>
+      <li>
+        <a href="#" class="social-link" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+      </li>
+      <li>
+        <a href="#" class="social-link">CODO A CODO 4.0</a>
+      </li>
+      </ul>
+      
+    
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/api.js" charset="utf-8"></script>
+
+<Script>let botonBusqueda = document.getElementById("bbusqueda");
+
+
+botonBusqueda.addEventListener("click", function(){
+
+	let url = "https://api.giphy.com/v1/gifs/random?api_key=kTCRWrSCtkY63u3OAmL7CUuILzLM1HH2&tag=dog&rating=g";
+
+	fetch(url).then(function(respuesta){    // primer callback (d)
+		return respuesta.json();
+	})
+	.then(function(datos){  // segundo callback (d)
+		let rutaImg= datos.data.images.downsized_large.url;
+	
+		let img = document.getElementById("imagenMostrar");
+	    img.src=rutaImg;
+	})
+
+});
+	
+
+</Script>
+    </body>
+</html>

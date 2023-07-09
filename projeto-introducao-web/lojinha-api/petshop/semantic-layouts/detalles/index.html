@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+  <!-- font para tablas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--FONT AWESOME - LIBRERIA ANIMACIONES Y CSS STYLES-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./../css/animista.css">
+  <link rel="stylesheet" href="./../css/model01.css">
+  <style>
+    .centered {
+      display: flex;
+      align-items: center;
+      align-items: space-around;
+      justify-content: space-around;
+    }
+
+
+    header {
+      background-color: aqua;
+    }
+
+
+    .navsection {
+      background-color: aquamarine;
+      width: 100%;
+      margin: 0;
+      z-index: 0;
+      align-items: space-around;
+      justify-content: space-around;
+    }
+
+    .navsection:hover {
+      opacity: 1;
+    }
+
+    .navsection ul {
+      display: inline-flex;
+      flex-direction: row;
+      /* flex-flow: row wrap; */
+      /*Propiedad shorthand para flex-wrap y flex-direction*/
+      justify-content: space-around;
+      align-items: space-around;
+      list-style-type: none;
+      height: 30px;
+      transition: 0.2s all;
+    }
+
+    .navsection ul:hover {
+      height: 50px;
+      opacity: 1;
+    }
+
+    .navsection ul li {
+      height: 100%;
+    }
+
+    .navsection ul li a {
+      text-decoration: none;
+      display: inline-block;
+      width: 150px;
+      height: 100%;
+      background-color: coral;
+      color: white;
+      border-radius: 10px;
+      transition: 0.2s all;
+    }
+
+    .navsection ul li a:hover {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .mainDetails {
+      background-color: lightgray;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+    }
+
+    .details__section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      row-gap: 15px;
+      height: 100%;
+      color: white;
+      padding-top: 50px;
+      margin-top: 0;
+      min-height:
+        85vh;
+    }
+
+    .details__section h2 {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      flex: 1;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+    }
+
+    .details__section article {
+      display: flex;
+      align-items: stretch;
+      column-gap: 15px;
+      padding: 25px;
+      flex: 12;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .details__section article {
+      background-color: mediumvioletred;
+      border: 1px solid black;
+      padding: 15px;
+      flex: 2;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .details__section article p#Universidad {
+      flex: 5;
+      order: 3;
+    }
+
+    p#Secundario {
+      flex: 1;
+    }
+
+    .details__section#Estudios {
+      background-color: blueviolet;
+    }
+
+    .details__section#Experiencia {
+      background-color: chartreuse;
+      color: black;
+    }
+
+    .details__section#vacunacion {
+      background-color: crimson;
+    }
+  </style>
+  <title>DETALLES</title>
+
+</head>
+
+<body>
+  <nav class="menu">
+    <label><img src="./../img/logo/logo02.svg" alt="logo libretaPET" class="logoBrand" /></label>
+    <ul class="menu__item ">
+      <li class="item"><a href="./../index.html" class="link-item">Home</a></li>
+        <li class="item"><a href="./../info.html" class="link-item">Info</a></li>
+        <li class="item"><a href="./../cuidados.html" class="link-item">Cuidados</a></li>
+        <li class="item"><a href="./../adoptar.html" class="link-item">Adoptar</a></li>
+        <li class="item"><a href="./../proyecto.html" class="link-item">Proyecto</a></li>
+        <li class="item"><a href="./../conntacto.html" class="link-item">Contacto</a></li>
+
+        <li class="item"><a href="./../snakeGame.html" class="link-item">snakeGame</a></li>
+     
+      </ul>
+
+    <span class="btn__menu" id="buttonMenu">
+      <i class="fa fa-bars"></i>
+    </span>
+  </nav>
+
+  <header>
+    <h1 class="centered">FlexBox</h1>
+  </header>
+
+  <main class="mainDetails">
+    <section class="details__section" id="Estudios">
+      <h2>Estudios</h2>
+      <article>
+        <p id="Universidad">Universidad</p>
+        <p id="Curso2">Curso 2</p>
+
+      </article>
+    </section>
+    <section class="details__section" id="Experiencia">
+      <h2>Experiencia</h2>
+      <article>
+        <p>Trabajo actual</p>
+        <p>Primer trabajo</p>
+      </article>
+    </section>
+    <section class="details__section" id="vacunacion">
+      <h2>Un poco sobre mi</h2>
+      <article>
+        <p>Un texto que cuenta brevemente mis gustos y mis hobbies</p>
+      </article>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <ul class="social-icons-list">
+      <li>
+        <a href="#" class="social-link"><i class="fa-solid fa-arrow-up"></i>TOPO</a>
+      </li>
+      <li>
+        <a href="#" class="social-link" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+      </li>
+      <li>
+        <a href="#" class="social-link">CODO A CODO 4.0</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="./../js/navbar.js"></script>
+</body>
+
+</html>

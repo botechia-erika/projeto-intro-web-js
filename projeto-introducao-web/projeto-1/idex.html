@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/discord_clone.css">
+    <title>DISCORD CLONE</title>
+
+</head>
+
+<body>
+    <div class="servers">
+        <div class="logo">
+            <img src="assets/images/icons/discord-logo.png" alt="Discord" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">8</span>
+            <img src="assets/images/svg/server01.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">50</span>
+            <img src="assets/images/svg/server02.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">120</span>
+            <img src="assets/images/svg/server03.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">8</span>
+            <img src="assets/images/svg/server04.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">50</span>
+            <img src="assets/images/svg/server05.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">120</span>
+            <img src="assets/images/svg/server06.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">50</span>
+            <img src="assets/images/svg/server07.svg" alt="server" />
+        </div>
+        <div class="server-logo">
+            <span class="message__count">120</span>
+            <img src="assets/images/svg/server08.svg" alt="server" />
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar__top">
+            <input type="text" placeholder="Find or start a conversation" />
+        </div>
+        <div class="sidebar__icon">
+            <i class="fas fa-user-friends fa-lg"></i>
+            <span>Friends</span>
+        </div>
+        <div class="sidebar__icon">
+            <i class="fas fa-compact-disc fa-lg"></i>
+            <span>Nitro</span>
+        </div>
+        <div class="sidebar__users">
+            <div class="sidebar__usersHeader">
+                <div class="sidebar__header">
+                    <h4>Direct messages</h4>
+                </div>
+                <i class="fas fa-plus sidebar__addUser"></i>
+            </div>
+            <div>
+                <div class="sidebar__user">
+                    <div>
+                        <span class="status"></span>
+                        <img src="assets/images/svg/avatar1.svg" alt="avatar" />
+                    </div>
+                    <h4>Hacker</h4>
+                </div>
+                <div class="sidebar__user">
+                    <div>
+                        <span class="status"></span>
+                        <img src="assets/images/svg/avatar2.svg" alt="avatar" />
+                    </div>
+                    <h4>E-Girl</h4>
+                </div>
+                <div class="sidebar__user">
+                    <div>
+                        <span class="status"></span>
+                        <img src="assets/images/svg/avatar3.svg" alt="avatar" />
+                    </div>
+                    <h4>Darth Vader</h4>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__profile">
+            <div>
+                <span class="status"></span>
+                <img src="assets/images/svg/avatar00.svg" alt="avatar" />
+            </div>
+            <div class="sidebar__profileInfo">
+                <h3>Darth-Vader</h3>
+                <p>#3094</p>
+            </div>
+            <div class="sidebar__profileIcons">
+                <i class="fas fa-microphone"></i>
+                <i class="fas fa-headset"></i>
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat">
+        <div>
+            <div class="chatHeader">
+                <div class="chatHeader__left">
+                    <span class="chatHeader__Dm">@</span>
+                    <h3>Darth-Vader</h3>
+                </div>
+                <div class="chatHeader__right">
+                    <i class="fas fa-phone-volume fa-lg"></i>
+                    <i class="fas fa-video fa-lg"></i>
+                    <i class="fas fa-thumbtack fa-lg"></i>
+                    <i class="fas fa-user-plus fa-lg"></i>
+
+                    <div class="search">
+                        <input type="text" placeholder="search" />
+                        <i class="fas fa-search fa-lg"></i>
+                    </div>
+                    <i class="fas fa-inbox fa-lg"></i>
+                    <i class="fas fa-question-circle fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <div class="chat__messages">
+            <div class="message">
+                <img src="assets/images/svg/avatar10.svg" alt="avatar">
+                <div class="message__info">
+                    <h4>Luke Skywalker <span class="message__timestamp">04/28/2022</span></h4>
+                    <p>Hello</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat__input">
+            <i class="fas fa-plus-circle fa-lg"></i>
+            <form>
+                <input class="sendMessage" type="text" placeholder="send message">
+                <button class="chat__inputButton" type="submit">Send</button>
+            </form>
+            <div class="chat__inputIcons">
+                <i class="fas fa-gift fa-lg"></i>
+                <i class="fas fa-file-image fa-lg"></i>
+                <i class="fas fa-laugh fa-lg"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/discord_clone.js "></script>
+</body>
+
+</html>

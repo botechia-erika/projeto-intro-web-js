@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+    <!-- font para tablas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FONT AWESOME - LIBRERIA ANIMACIONES Y CSS STYLES-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../css/animista.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DETALLES VACUNA</title>
+
+</head>
+<body>
+<nav class="menu">
+    <label><img src="img/logo/logo02.svg" alt="logo libretaPET" class="logoBrand"/></label>
+    <ul class="menu__item ">
+        <li class="item"><a href="home.html" class="link-item">Home</a></li>
+        <li class="item"><a href="info.html" class="link-item">Info</a></li>
+        <li class="item"><a href="salud.html" class="link-item">salud</a></li>
+        <li class="item"><a href="proyecto.html" class="link-item">Proyecto</a></li>
+        <li class="item"><a href="adoptar.html" class="link-item">Adoptar</a></li>
+        <li class="item"><a href="#" class="link-item">Contacto</a></li>
+        <li class="item"><a href="snakeGame.html" class="link-item">snakeGame</a></li>
+
+      </ul>
+
+    <span class="btn__menu" id="buttonMenu">
+      <i class="fa fa-bars" ></i>
+    </span>
+</nav>
+<header class="header__containerDetails">
+    <div class="div__headerDetails">
+        <h1 class="h1__detrails"><img src="img/icons/icon02.png" alt="icon adoptar" class="icon__title"> Formulario de Contacto!</h1>
+    </div>
+    <div class="div__headerDetails"></div>
+</header>
+<main class="main__container">
+    <form action="https://formsubmit.co/9b53b84a2d7af63d457b12c2cc1f4e21" method="POST" />
+    <fieldset>
+            <legend>Info Personal</legend>
+            <div class="data__container">
+                <label for="nombreCompleto">Ingrese su Nombre y Apellido</label>
+                <input type="text" name="nombreCompleto" id="nombreCompleto" required="">
+            </div>
+            <div class="data__container">
+                <label for="email">Ingrese su Email</label>
+                <input type="mail" name="email" id="email" required="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tema y Mensagem</legend>
+            <div class="data__container">
+                <label for="selectTema">Selecione el Asunto</label>
+                <select type="select" name="selectTema" id="selectTema" required>
+                    <option  selected disabledd>Seleccione TEMA</option>
+                    <option value="dudasReclamos">Dudas y Reclamos</option>
+                    <option value="sugestiones">Sugestiones</option>
+                    <option value="contactoProfesional">Contacto Profesional</option>
+                    <option value="otros">OTROS</option>
+                </select>    
+            </div>
+            <div class="data__container">
+                <textarea name="mensagemContacto" id="mensagemContacto" cols="30" rows="10"></textarea>
+                </div>
+        </fieldset>
+                <button class="css-button-shadow-border-sliding--green" type="submit" >Enviar Mensagem</button>
+            </div>
+
+    </form>
+</main>
+
+
+<footer>
+    <ul class="social-icons-list">
+      <li>
+        <a href="#" class="social-link"><i class="fa-solid fa-arrow-up"></i>TOPO</a>
+      </li>
+      <li>
+        <a href="#" class="social-link" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+      </li>
+      <li>
+        <a href="#" class="social-link">CODO A CODO 4.0</a>
+      </li>
+      </ul>
+      
+    
+    </footer>
+
+
+<script src="js/navbar.js"></script>
+<script src="js/formValidacion.js"></script>
+
+
+</body>
+</html>
