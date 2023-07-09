@@ -1,0 +1,125 @@
+main.main__container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 75vh;
+}
+
+aside.asideAnti {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  width: 10vw;
+  height: 100%;
+  justify-content: space-around;
+  background-color: #FEAA00;
+  align-self: space-around;
+}
+
+aside.asideAnti>nav {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.nav-link-anti {
+  width: 140px;
+  height: 38%;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  background-color: #191900;
+  color: #F0EEC6;
+  text-align: center;
+  align-self: space-around;
+}
+
+
+
+.section-sm {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  height: 100%;
+  align-self: center;
+}
+
+.active {
+  background-color: greenyellow;
+  color: black;
+  text-decoration: none;
+}
+
+.div-title {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  align-self: center;
+  justify-content: space-around;
+}
+
+article {
+  color: white;
+  align-items: center;
+}
+
+.div-superior {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 40%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.div-inferior {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 40%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  width: 29%;
+  height: 55%;
+  background-color: #0000FF;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.article-text {
+  display: flex;
+  padding-top: 1rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+figure {
+  width: 50%;
+  height: 100%;
+  align-self: center;
+}
+
+.img-article {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+}
